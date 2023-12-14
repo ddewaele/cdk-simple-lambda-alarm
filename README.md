@@ -1,8 +1,15 @@
-# Welcome to your CDK TypeScript project
+# Lambda and alarms
 
-This is a blank project for CDK development with TypeScript.
+Simple CDK project that generates a Lamnbda function accepting a JSON event with an `error` field that can either be true or false.
+When true the lambda goes into error, allowing us to test the CloudWatch alarm associated with it.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+![](./docs/alarms.png)
+
+You can invoke the lambda using the AWS CLI like this : 
+
+```
+aws lambda invoke --function-name FUNCTION_NAME --invocation-type RequestResponse --cli-binary-format raw-in-base64-out --payload '{"error": true}' output.txt
+```
 
 ## Useful commands
 

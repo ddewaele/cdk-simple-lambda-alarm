@@ -1,0 +1,1 @@
+{"errorType":"Error","errorMessage":"Lambda goes into error","trace":["Error: Lambda goes into error","    at Runtime.handler (file:///var/task/index.mjs:4:15)","    at Runtime.handleOnceNonStreaming (file:///var/runtime/index.mjs:1173:29)"]}
